@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.bw.movie.R;
+import com.bw.movie.fmk.base.BasefActivity;
+
 /**
  * author : zjh
  * e-mail : zjh@163.com
@@ -11,11 +13,19 @@ import com.bw.movie.R;
  * desc   :  购票记录
  * version: 1.0
  */
-public class MyFoodedActivity extends AppCompatActivity {
+public class MyFoodedActivity extends BasefActivity {
+    @Override
+    protected int getLayoutResId() {
+        return R.layout.activity_my_fooded;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_fooded);
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

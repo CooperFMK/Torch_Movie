@@ -9,7 +9,7 @@ package com.bw.movie.zjh.module.utils.mvp.util;
  */
 public class Apis {
     //  主机名
-    public static final String BASE_URL = "http://172.17.8.100/";
+    public static final String BASE_URL = "http://mobile.bwstudent.com/";
 
 
     // 13. 电影评论点赞

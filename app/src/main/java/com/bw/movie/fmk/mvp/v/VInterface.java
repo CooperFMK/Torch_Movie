@@ -58,4 +58,59 @@ public interface VInterface {
     public interface VInterfacegetQuXiaoDianYingGuanZhu {
         void getQuXiaoDianYingGuanZhu(Object object);
     }
+
+    //电影评论
+    public interface VInterfacegetDianYingPingLun {
+        void getDianYingPingLun(Object object);
+    }
+
+    //电影评论点赞
+    public interface VInterfacegetPingLunDianZan {
+        void getPingLunDianZan(Object object);
+    }
+
+    //电影评论回复
+    public interface VInterfacegetPTianJIaPingLun {
+        void getTianJIaPingLun(Object object);
+    }
+
+    //电影购票
+    public interface VInterfacegetGouPiao {
+        void getGouPiao(Object object);
+    }
+
+    //根据电影ID和影院ID查询电影排期列表
+    public interface VInterfacegetDianYingPaiQi {
+        void getDianYingPaiQi(Object object);
+    }
+
+    //下单
+    public interface VInterfacegetXiaDan {
+        void getXiaDan(Object object);
+    }
+
+    //支付
+    public interface VInterfacegetZhiFu {
+        void getZhiFu(Object object);
+    }
+
+    //头像
+    public interface VInterfacegetTouXiang {
+        void getTouXiang(Object object);
+    }
+
+    //用户信息
+    public interface VInterfacegetYongHu {
+        void getYongHu(Object object);
+    }
+
+    //修改密码
+    public interface VInterfacegetXiuGai {
+        void getXiuGai(Object object);
+    }
+
+    //微信登陆
+    public interface VInterfacegetWeiXinDeng {
+        void getWeiXinDeng(Object object);
+    }
 }

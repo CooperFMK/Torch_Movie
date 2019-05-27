@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.bw.movie.R;
 import com.bw.movie.fmk.base.BasefActivity;
 
+import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
 

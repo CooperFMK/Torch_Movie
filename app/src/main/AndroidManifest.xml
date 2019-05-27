@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.bw.movie">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- //获取设备网络状态，禁用后无法获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- //网络权限，当禁用后，无法进行检索等相关业务 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 微信配置 -->
+    <meta-data
+        android:name="wxb3852e6a6b7d9516"
+        android:value="123456" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
 
 
     <application
         android:name=".app.App"
         android:allowBackup="true"
+        android:configChanges="orientation|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".fmk.activity.MainActivity" />
@@ -27,24 +52,33 @@
         <activity android:name=".fmk.activity.ZhuCeActivity" />
         <activity android:name=".fmk.fragment.FragmentActivity" />
         <activity android:name=".fmk.activity.XiangQingActivity" />
-<<<<<<< HEAD
         <activity android:name=".fmk.fragment.TabLayout.TabLayoutActivity" />
+        <activity android:name=".fmk.activity.GouPiaoActivity" />
+        <activity android:name=".fmk.activity.GouMaiActivity" />
+        <activity android:name=".fmk.activity.YuanZuoActivity" />
+        <activity android:name=".fmk.activity.WeiXinZhiFuActivity" />
+        <activity android:name=".fmk.activity.XiuGaiMiMaActivity" />
+        <activity android:name=".fmk.activity.HomeActivity"></activity>
+        <activity android:name=".fmk.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            ></activity>
 
-=======
-      
->>>>>>> dd0cea8aa943818b0d23c00cded1f8b58265c8e6
+
+        <activity
+            android:name=".fmk.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <!-- android:theme="@style/Theme.FloatActivity" -->
+
         <activity android:name=".zjh.module.ui.cinema.CinemaDetailsActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyRemindActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyPresonActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyLookActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyFoodedActivity" />
-
-        <activity android:name=".zjh.module.ui.cinema.ChooseSeatBuyActivity">
-        <activity android:name=".zjh.module.ui.cinema.my.MyBackMessageActivity"></activity>
-<<<<<<< HEAD
-
-=======
->>>>>>> dd0cea8aa943818b0d23c00cded1f8b58265c8e6
+        <activity android:name=".zjh.module.ui.cinema.ChooseSeatBuyActivity" />
+        <activity android:name=".zjh.module.ui.cinema.my.MyBackMessageActivity" />
 
     </application>
 

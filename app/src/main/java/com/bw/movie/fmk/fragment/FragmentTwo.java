@@ -164,7 +164,9 @@ public class FragmentTwo extends BaseFragment implements IView {
 
     /*
      *   收缩
+     *
      *  */
+
     private void reduce() {
         //设置收缩状态时的布局
         et_home_search.setText("");
