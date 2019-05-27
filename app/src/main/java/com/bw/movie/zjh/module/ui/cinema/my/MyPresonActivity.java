@@ -6,10 +6,17 @@ import android.icu.util.ValueIterator;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+=======
+import android.view.Gravity;
+import android.view.Window;
+import android.view.WindowManager;
+import android.webkit.WebView;
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
 import com.bw.movie.R;
 import com.bw.movie.fmk.activity.XiuGaiMiMaActivity;
@@ -112,6 +119,7 @@ public class MyPresonActivity extends BasefActivity implements VInterface.VInter
     }
 
     @Override
+<<<<<<< HEAD
     public void getYongHu(Object object) {
         YongHuBean yongHuBean2 = (YongHuBean)object;
         /*
@@ -139,5 +147,13 @@ public class MyPresonActivity extends BasefActivity implements VInterface.VInter
         wode_shi.setText(lastLoginTime+"");
 
         yongHuBean.add(result);
+=======
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_my_preson);
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     }
+
+
 }

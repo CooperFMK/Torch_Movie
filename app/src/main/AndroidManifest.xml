@@ -3,9 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bw.movie">
 
+    <!--网络权限-->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ADD_VOICEMAIL" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -27,6 +35,35 @@
         android:anyDensity="true"
         android:largeScreens="true"
         android:normalScreens="true" />
+=======
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于写入缓存数据到扩展存储卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--手机状态权限-->
+    <uses-permission android:name="permission:android.permission.CALL_PHONE"/>
+    <uses-permission android:name=" permission:android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="permission:com.android.voicemail.permission.ADD_VOICEMAIL"/>
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
 
     <application
@@ -40,6 +77,16 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+       <!-- <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        &lt;!&ndash; AK鉴权 &ndash;&gt;
+        &lt;!&ndash; meta-data需要写在application中 &ndash;&gt;
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FDVY52T5B1zagTD75KbdLm3yeE6E4iyC"/>-->
+
         <activity android:name=".fmk.activity.MainActivity" />
         <activity android:name=".fmk.activity.YinDaoActivity">
             <intent-filter>
@@ -48,6 +95,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--  高德  -->
+        <!-- 基础地图 -->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <meta-data android:name="com.amap.api.v2.apikey"
+            android:value="fa689b1b2c843838534ec64bcb2432a8">
+        </meta-data>
+
+
         <activity android:name=".fmk.activity.LogActivity" />
         <activity android:name=".fmk.activity.ZhuCeActivity" />
         <activity android:name=".fmk.fragment.FragmentActivity" />
@@ -55,6 +111,7 @@
         <activity android:name=".fmk.fragment.TabLayout.TabLayoutActivity" />
         <activity android:name=".fmk.activity.GouPiaoActivity" />
         <activity android:name=".fmk.activity.GouMaiActivity" />
+<<<<<<< HEAD
         <activity android:name=".fmk.activity.YuanZuoActivity" />
         <activity android:name=".fmk.activity.WeiXinZhiFuActivity" />
         <activity android:name=".fmk.activity.XiuGaiMiMaActivity" />
@@ -73,13 +130,50 @@
         <!-- android:theme="@style/Theme.FloatActivity" -->
 
         <activity android:name=".zjh.module.ui.cinema.CinemaDetailsActivity" />
+=======
+        <!--  广播  -->
+        <receiver android:name=".fmk.util.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".zjh.module.ui.cinema.CinemaDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
         <activity android:name=".zjh.module.ui.cinema.my.MyRemindActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyPresonActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyLookActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyFoodedActivity" />
+<<<<<<< HEAD
         <activity android:name=".zjh.module.ui.cinema.ChooseSeatBuyActivity" />
         <activity android:name=".zjh.module.ui.cinema.my.MyBackMessageActivity" />
+=======
+        <activity android:name=".zjh.module.ui.cinema.my.MyBackMessageActivity" />
+        <activity
+            android:name=".zjh.module.ui.cinema.ChooseSeatBuyActivity"
+            android:screenOrientation="portrait" />
 
+        <!-- 支付宝 -->
+
+
+        <!-- 微信支付回调函数 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxb3852e6a6b7d9516" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".zjh.module.ui.cinema.GPSAddressActivity">
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
+
+        </activity>
     </application>
 
 </manifest>

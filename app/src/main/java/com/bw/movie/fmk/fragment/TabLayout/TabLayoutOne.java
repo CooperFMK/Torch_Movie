@@ -98,8 +98,13 @@ public class TabLayoutOne extends BasefFragment implements VInterface.VInterface
     //关注
     @Override
     public void getDianYingGuanZhu(Object object) {
+<<<<<<< HEAD
             GuanZhuBean guanZhuBean2 = (GuanZhuBean)object;
             String message = guanZhuBean2.getMessage();
+=======
+        GuanZhuBean guanZhuBean2 = (GuanZhuBean)object;
+        String message = guanZhuBean2.getMessage();
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
             guanZhuBean.add(message);
             Toast.makeText(getActivity(), guanZhuBean2.getMessage(), Toast.LENGTH_SHORT).show();
 

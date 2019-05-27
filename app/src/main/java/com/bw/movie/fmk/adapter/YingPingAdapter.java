@@ -48,7 +48,11 @@ public class YingPingAdapter extends XRecyclerView.Adapter<YingPingAdapter.Holde
     }
 
     @Override
+<<<<<<< HEAD
     public void onBindViewHolder(@NonNull final Holder holder, final int i) {
+=======
+    public void onBindViewHolder(@NonNull Holder holder, final int i) {
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
         String commentUserName = data.get(i).getCommentUserName();
         holder.yingping_item_name.setText(commentUserName);
@@ -73,8 +77,12 @@ public class YingPingAdapter extends XRecyclerView.Adapter<YingPingAdapter.Holde
             @Override
             public void onClick(View v) {
                 if (onItem!=null){
+<<<<<<< HEAD
                     onItem.onClick(i,data.get(i).getIsGreat()+1);
                     //holder.yingping_item_zan_shu.setText(data.get(i).getIsGreat()+1);
+=======
+                    onItem.onClick(i,data.get(i).getIsGreat());
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
                 }
             }
         });

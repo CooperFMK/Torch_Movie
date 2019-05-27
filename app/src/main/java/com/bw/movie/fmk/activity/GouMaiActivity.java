@@ -1,6 +1,9 @@
 package com.bw.movie.fmk.activity;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -82,7 +85,10 @@ public class GouMaiActivity extends BasefActivity implements VInterface.VInterfa
         //根据电影ID和影院ID查询电影排期列表
         init();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     }
 
     private void init() {
@@ -99,6 +105,7 @@ public class GouMaiActivity extends BasefActivity implements VInterface.VInterfa
         map2.put("cinemasId","2");
         pInterfacegetDianYingPaiQi.getDianYingPaiQi(null,map2);
 
+<<<<<<< HEAD
         //返回
         goumaiFan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +118,10 @@ public class GouMaiActivity extends BasefActivity implements VInterface.VInterfa
     }
 
 
+=======
+    }
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     @Override
     public void showXiangQingZhuYe(Object object) {
         XiangQingZhuYeBean xiangQingZhuYeBean2 = (XiangQingZhuYeBean)object;

@@ -8,15 +8,22 @@ import com.bw.movie.fmk.util.Url;
 
 import java.util.HashMap;
 
+<<<<<<< HEAD
 import okhttp3.MultipartBody;
 
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 /**
  * @Auther: 付明锟
  * @Date: 2019/5/20 16:43
  * @Description:
  */
+<<<<<<< HEAD
 public class MyPensterTwo<T> implements PInterface.PInterfacegetDianYingPaiQi ,PInterface.PInterfacegetXiaDan ,PInterface.PInterfacegetZhiFu
   ,PInterface.PInterfacegetTouXiang ,PInterface.PInterfacegetYongHu,PInterface.PInterfacegetXiuGai,PInterface.PInterfacegetWeiXinDengLu{
+=======
+public class MyPensterTwo<T> implements PInterface.PInterfacegetDianYingPaiQi {
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
     private MyModel myModel;
     public T tt;
@@ -39,6 +46,7 @@ public class MyPensterTwo<T> implements PInterface.PInterfacegetDianYingPaiQi ,P
         Log.e("tab","myModel"+map);
     }
 
+<<<<<<< HEAD
     //电影下单
     @Override
     public void getXiaDan(String url, HashMap<String, String> map) {
@@ -116,6 +124,8 @@ public class MyPensterTwo<T> implements PInterface.PInterfacegetDianYingPaiQi ,P
     }
 
     //内存优化
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     @Override
     public void onDsply() {
          if (tt!=null){

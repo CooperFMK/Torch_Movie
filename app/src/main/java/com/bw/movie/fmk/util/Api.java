@@ -1,7 +1,10 @@
 package com.bw.movie.fmk.util;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.support.annotation.MainThread;
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
 import java.util.Map;
 

@@ -278,7 +278,10 @@ public class XiangQingActivity extends BasefActivity implements VInterface.VInte
         DianZanBean dianZanBean2 = (DianZanBean)object;
         String message = dianZanBean2.getMessage();
         dianZanBeans.add(message);
+<<<<<<< HEAD
         Toast.makeText(this, dianZanBean2.getMessage(), Toast.LENGTH_SHORT).show();
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
         yingpinAdapter.notifyDataSetChanged();
     }
 
@@ -534,7 +537,11 @@ public class XiangQingActivity extends BasefActivity implements VInterface.VInte
                 Log.e("tab","添加评论");
                 String id = getIntent().getStringExtra("id");
                 HashMap<String,String> mapTian = new HashMap<>();
+<<<<<<< HEAD
                 mapTian.put("movieId",id);
+=======
+                mapTian.put("commentId",id);
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
                 mapTian.put("commentContent","555");
                 Log.e("tab","mapTian"+mapTian);
                 pInterfacegetTianJIaPingLun.getTianJIaPingLun(null,mapTian);
@@ -574,9 +581,17 @@ public class XiangQingActivity extends BasefActivity implements VInterface.VInte
         yingpinAdapter.setOnItem(new YingPingAdapter.OnItem() {
             @Override
             public void onClick(int position, int commentId) {
+<<<<<<< HEAD
                 String id = getIntent().getStringExtra("id");
                 HashMap<String,String> mapZan = new HashMap<>();
                 mapZan.put("commentId",id);
+=======
+                Log.e("tab","点赞点击了");
+                String id = getIntent().getStringExtra("id");
+                HashMap<String,String> mapZan = new HashMap<>();
+                mapLun.put("commentId",id);
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
                 pInterfacegetDianZan.getDianZan(null,mapZan);
             }
         });

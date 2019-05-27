@@ -1,7 +1,10 @@
 package com.bw.movie.fmk.adapter;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,9 +14,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.bw.movie.R;
+<<<<<<< HEAD
 import com.bw.movie.fmk.activity.GouMaiActivity;
 import com.bw.movie.fmk.activity.XiangQingActivity;
 import com.bw.movie.fmk.activity.YuanZuoActivity;
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 import com.bw.movie.fmk.bean.GouPiaoBean;
 import com.bw.movie.fmk.bean.PaiQiBeam;
 
@@ -43,6 +49,7 @@ public class PaiQiAdapter extends RecyclerView.Adapter<PaiQiAdapter.Holder> {
     }
 
     @Override
+<<<<<<< HEAD
     public void onBindViewHolder(@NonNull final Holder holder, final int i) {
         final String screeningHall = data.get(i).getScreeningHall();
         holder.pai_item_name.setText(screeningHall);
@@ -74,10 +81,28 @@ public class PaiQiAdapter extends RecyclerView.Adapter<PaiQiAdapter.Holder> {
                 mContext.startActivity(intent);
             }
         });
+=======
+    public void onBindViewHolder(@NonNull Holder holder, int i) {
+        String screeningHall = data.get(i).getScreeningHall();
+        holder.pai_item_name.setText(screeningHall);
+
+        String beginTime = data.get(i).getBeginTime();
+        holder.pai_item_kai.setText(beginTime);
+
+        String endTime = data.get(i).getEndTime();
+        holder.pai_item_jie.setText(endTime);
+
+        double price = data.get(i).getPrice();
+        holder.pai_item_qian.setText(price+"");
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     }
 
     @Override
     public int getItemCount() {
+<<<<<<< HEAD
+=======
+        Log.e("tab","data"+data);
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
         return data.size();
     }
 
@@ -93,6 +118,7 @@ public class PaiQiAdapter extends RecyclerView.Adapter<PaiQiAdapter.Holder> {
             pai_item_qian = itemView.findViewById(R.id.pai_item_qian);
         }
     }
+<<<<<<< HEAD
 
     //接口
 //    public interface OnItem{
@@ -106,4 +132,6 @@ public class PaiQiAdapter extends RecyclerView.Adapter<PaiQiAdapter.Holder> {
 //        this.onItem = onItem;
 //    }
 
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 }

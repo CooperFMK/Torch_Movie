@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+=======
+import android.util.ArrayMap;
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -157,7 +161,7 @@ public class FragmentThree extends BaseFragment implements IView, View.OnClickLi
                 startActivity(new Intent(getActivity(), MyBackMessageActivity.class));
                 break;
             case R.id.my_newapp:       // 最新版本
-
+                findNewVersion();
                 break;
             case R.id.my_unlogin:      //退出登录
                 Intent intent2 = new Intent(getActivity(), LogActivity.class);
@@ -169,6 +173,7 @@ public class FragmentThree extends BaseFragment implements IView, View.OnClickLi
         }
     }
 
+<<<<<<< HEAD
     //相机
 //    private void xiangji() {
 //        pai.setOnClickListener(new View.OnClickListener() {
@@ -280,6 +285,15 @@ public class FragmentThree extends BaseFragment implements IView, View.OnClickLi
         }else{
             return false;
         }
+=======
+
+    /*
+    *  检查版本
+    * */
+    private void findNewVersion() {
+
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     }
 
     /*

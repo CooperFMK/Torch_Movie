@@ -15,8 +15,11 @@ import com.bw.movie.fmk.bean.RYingBean;
 import com.bw.movie.fmk.bean.ShangYingBean;
 import com.bw.movie.fmk.bean.DianYingYuGaoBean;
 import com.bw.movie.fmk.bean.TianJiaPingLunBean;
+<<<<<<< HEAD
 import com.bw.movie.fmk.bean.TouXiangBean;
 import com.bw.movie.fmk.bean.XiaDanBean;
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 import com.bw.movie.fmk.bean.XiangQingZhuYeBean;
 import com.bw.movie.fmk.bean.XiuGaiBean;
 import com.bw.movie.fmk.bean.YongHuBean;
@@ -390,6 +393,7 @@ public class MyModel {
                 });
     }
 
+<<<<<<< HEAD
     //购票下单
     public void getXiaDan(String url, final Map<String,String> map){
         RetroFitUtil inRetroFitUtil = RetroFitUtil.getInRetroFitUtil();
@@ -528,6 +532,8 @@ public class MyModel {
     }
 
 
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     public void setMyModel(MyCallBack myCallBack) {
             this.myCallBack = myCallBack;
     }

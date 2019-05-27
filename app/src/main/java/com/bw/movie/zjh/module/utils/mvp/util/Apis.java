@@ -8,9 +8,17 @@ package com.bw.movie.zjh.module.utils.mvp.util;
  * version: 1.0
  */
 public class Apis {
+<<<<<<< HEAD
     //  主机名
+=======
+    //   内网主机名
+    //public static final String BASE_URL = "http://172.17.8.100/";
+    //   外网主机
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     public static final String BASE_URL = "http://mobile.bwstudent.com/";
 
+    //6. 查询用户关注的影片列表
+    public static final String MY_LIKE_MOVIE_GET = "movieApi/movie/v1/verify/findMoviePageList";
 
     // 13. 电影评论点赞
     public static final String CALL_LIKE_POPS = "movieApi/movie/v1/verify/movieCommentGreat";
@@ -23,8 +31,8 @@ public class Apis {
 
     //17. 购票下单
     public static final String BUY_MOVIE_TICKET = "movieApi/movie/v1/verify/buyMovieTicket";
-
-
+    //18. 支付
+    public static final String MOVIE_TICKET_PAY = "movieApi/movie/v1/verify/pay";
     // 19. 根据影院ID查询该影院下即将上映的电影列表
     public static final String CINEMA_DOEN_MOVIE_GET = "movieApi/movie/v1/findSoonMovieByCinemaId";
 
@@ -48,8 +56,8 @@ public class Apis {
     public static final String NEARBY_GET = "movieApi/cinema/v1/findNearbyCinemas";
     //  3. 查询电影信息明细 / 电影详情
     public static final String INFORMATION_GET = "movieApi/cinema/v1/findCinemaInfo";
-    //  4.
-    public static final String QUERY_LIKE_GET = "";
+    //  4. 根据电影名称模糊查询电影院
+    public static final String QUERY_CINEMA_GET = "movieApi/cinema/v1/findAllCinemas";
     //  5.  查询用户关注的影院信息
     public static final String MY_LIKE_CINEMA_GET = "movieApi/cinema/v1/verify/findCinemaPageList";
     //  6. 关注影院
@@ -71,5 +79,19 @@ public class Apis {
 
     // 8.用户签到
     public static final String MY_USER_SIGNIN_GET = "movieApi/user/v1/verify/userSignIn";
+    //9. 用户购票记录查询
+    public static final String MY_FOODED_GET = "movieApi/user/v1/verify/findUserBuyTicketRecordList";
+
+
+    //1. 意见反馈
+    public static final String MY_BACE_MESSAGE_POST = "movieApi/tool/v1/verify/recordFeedBack";
+    //2. 新版本
+    public static final String MY_NEW_APP_GET = "movieApi/tool/v1/findNewVersion";
+    // 3.系统消息
+    public static final String MY_REMIND_GET = "movieApi/tool/v1/verify/findAllSysMsgList";
+    // 4.读取状态修改
+    public static final String MY_READ_STATUS_GET = "movieApi/tool/v1/verify/changeSysMsgStatus";
+    // 5. 未读消息数量
+    public static final String MY_UNREAD_NUM_GET = "movieApi/tool/v1/verify/findUnreadMessageCount";
 
 }

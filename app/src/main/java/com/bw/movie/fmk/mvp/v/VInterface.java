@@ -83,6 +83,7 @@ public interface VInterface {
     public interface VInterfacegetDianYingPaiQi {
         void getDianYingPaiQi(Object object);
     }
+<<<<<<< HEAD
 
     //下单
     public interface VInterfacegetXiaDan {
@@ -113,4 +114,6 @@ public interface VInterface {
     public interface VInterfacegetWeiXinDeng {
         void getWeiXinDeng(Object object);
     }
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 }

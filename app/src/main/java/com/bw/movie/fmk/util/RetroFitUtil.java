@@ -35,6 +35,10 @@ public class RetroFitUtil {
     public Api api;
     private final OkHttpClient okHttpClient;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     //拦截器
     private RetroFitUtil(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor(new httplog());

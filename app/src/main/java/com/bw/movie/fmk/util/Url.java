@@ -7,10 +7,17 @@ package com.bw.movie.fmk.util;
  */
 public class Url {
 
+<<<<<<< HEAD
     //http://mobile.bwstudent.com
     //http://172.17.8.100/
 
     public static final String TOU = "http://mobile.bwstudent.com/";
+=======
+    //http://mobile.bwstudent.com/
+    //http://172.17.8.100/tt
+
+    public static String TOU = "http://mobile.bwstudent.com/";
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 
     //登录，http://172.17.8.100/movieApi/user/v1/login
     public static String DENGLU = "movieApi/user/v1/login";
@@ -63,6 +70,7 @@ public class Url {
     //根据电影ID和影院ID查询电影排期列表，http://172.17.8.100/movieApi/movie/v1/findMovieScheduleList
     public static String DIANYINGID_YINGYUANID="movieApi/movie/v1/findMovieScheduleList";
 
+<<<<<<< HEAD
     //购票下单，http://172.17.8.100/movieApi/movie/v1/verify/buyMovieTicket
     public static String GOUPIAO_XIADAN="movieApi/movie/v1/verify/buyMovieTicket";
 
@@ -84,4 +92,6 @@ public class Url {
     //微信登陆，http://172.17.8.100/movieApi/user/v1/weChatBindingLogin
     public static String WEIXN_DENGLU="movieApi/user/v1/weChatBindingLogin";
 
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 }

@@ -2,10 +2,15 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorpop">#00f2eded</color>
+    <color name="colorpop">#00ffffff</color>
     <color name="colorAccent">#D81B60</color>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
     <!--Activity透明窗口-->
     <color name="transparent">#00fdfdfd</color>
 
+    <color name="color_3a3a3a">#3a3a3a</color>
     <color name="white">#ffffff</color>
 </resources>

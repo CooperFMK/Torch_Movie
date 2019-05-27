@@ -99,6 +99,7 @@ public interface PInterface {
         void getDianYingPaiQi(String url,HashMap<String, String> map);
         void onDsply();
     }
+<<<<<<< HEAD
 
     //购票下单
     public interface PInterfacegetXiaDan {
@@ -135,4 +136,6 @@ public interface PInterface {
         void getWeiXinDengLu(String url ,HashMap<String, String> map);
         void onDsply();
     }
+=======
+>>>>>>> 59e708dc3952f7c5e1933c5e7030f97ac62ed13a
 }
